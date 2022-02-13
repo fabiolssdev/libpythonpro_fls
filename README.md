@@ -1,4 +1,5 @@
-# libpythonpro
+
+pip# libpythonpro
 Modulo para exemplificar construcao de projetos Python no curso Pytools
 
 Nesse Curso eh ensinado como contribuir com projetos de codigo aberto
