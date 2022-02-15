@@ -101,12 +101,12 @@ def find_package_data(
     return out
 
 
-PACKAGE = "libpythonpro"
+PACKAGE = "libpythonpro_fls"
 NAME = PACKAGE
 DESCRIPTION = "Modulo para exemplificar construcao de projetos Python no curso Pytools"
 AUTHOR = "Fabio Luis"
 AUTHOR_EMAIL = "fabiocarini2003@gmail.com"
-URL = "https://github.com/fabio1008/libpythonpro"
+URL = "https://github.com/fabio1008/libpythonpro_fls"
 VERSION = __import__(PACKAGE).__version__
 
 setup(

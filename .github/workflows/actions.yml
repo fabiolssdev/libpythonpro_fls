@@ -1,4 +1,4 @@
-name: libpythonpron
+name: libpythonpron_fls
 on: [push]
 jobs:
   check-bats-version:
