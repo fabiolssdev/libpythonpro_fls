@@ -13,8 +13,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    services:
-
     steps:
       - uses: actions/checkout@v2
       - name: Setup Python
@@ -25,11 +23,5 @@ jobs:
       - name: Instalar dependências
         run: |
           pip install -r requirements-dev.txt
-      - name: Rodar Testes Automáticos
-        run: |
-          pytest --cov=pypro
-      - name: Relatório Coverage
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-        run: |
-          codecov
+      - name: Codecov
+        uses: codecov/codecov-action@v2.1.0
