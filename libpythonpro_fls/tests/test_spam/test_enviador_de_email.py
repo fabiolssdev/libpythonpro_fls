@@ -1,17 +1,37 @@
-from libpythonpro_fls.spam.enviador_de_email import Enviador
+import pytest
+
+from libpythonpro_fls.spam.enviador_de_email import Enviador, EmailInvalido
 
 
 def test_criar_enviador_de_email():
-    enviador= Enviador()
+    enviador = Enviador()
     assert enviador is not None
 
 
-def test_remetente():
+@pytest.mark.parametrize(
+    'remetente',
+    ['fabiocarini2003@gmail.com','fabio.dublin@yahoo.com.br']
+)
+def test_remetente(remetente):
     enviador = Enviador()
     resultado = enviador.enviar(
-        'fabiocarini2003@gmail.com',
+        remetente,
         'cariniefabio@gmail.com',
         'Curso PythonPro',
         'Turma Moacir Moda'
-   )
-    assert 'fabiocarini2003@gmail.com' in resultado
+    )
+    assert remetente in resultado
+
+@pytest.mark.parametrize(
+    'remetente',
+    ['','fabio']
+)
+def test_remetente_invalido(remetente):
+    enviador = Enviador()
+    with pytest.raises(EmailInvalido):
+        enviador.enviar(
+            remetente,
+            'cariniefabio@gmail.com',
+            'Curso PythonPro',
+            'Turma Moacir Moda'
+        )
