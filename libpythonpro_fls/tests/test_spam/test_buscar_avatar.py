@@ -16,5 +16,5 @@ def test_buscar_avatar():
     github_api.requests.get = get_original
 
 def test_buscar_avatar_integracao():
-    url = github_api.buscar_avatar('fabio')
+    url = github_api.buscar_avatar('fabio1008')
     assert 'https://avatars.githubusercontent.com/u/83844802?v=4' == url
