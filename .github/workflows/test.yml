@@ -25,7 +25,7 @@ jobs:
           pip install -r requirements-dev.txt
       - name: testes
         run: |
-          pytest --cov=libpythopro_fls
+          pytest --cov=libpythonpro_fls
       - name: Codecov
         env:
           CODECOV_TOKEN: '0418bf9b-2a55-4c89-a472-9c51c1183e6d'
