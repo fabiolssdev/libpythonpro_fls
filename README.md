@@ -6,6 +6,7 @@ Nesse Curso eh ensinado como contribuir com projetos de codigo aberto
 Link para o curso [Python Pro]
 [![Updates](https://pyup.io/repos/github/fabio1008/libpythonpro_fls/shield.svg)](https://pyup.io/repos/github/fabio1008/libpythonpro_fls/)
 [![Python 3](https://pyup.io/repos/github/fabio1008/libpythonpro_fls/python-3-shield.svg)](https://pyup.io/repos/github/fabio1008/libpythonpro_fls/)
+[![codecov](https://codecov.io/gh/fabio1008/libpythonpro_fls/branch/main/graph/badge.svg?token=XW07YJW5J8)](https://codecov.io/gh/fabio1008/libpythonpro_fls)
 
 Suportada Versao 3 do Python
 
