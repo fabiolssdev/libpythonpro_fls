@@ -15,7 +15,7 @@ def avatar_url(mocker):
     }
     get_mock = mocker.patch('libpythonpro_fls.github_api.requests.get')
     get_mock.return_value = resp_mock
-    return url
+    yield url
 
 
 def test_buscar_avatar(avatar_url):
