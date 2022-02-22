@@ -24,9 +24,6 @@ jobs:
         run: |
           pip install -q pipenv codecov
           pipenv sync --dev
-      - name: testes
-        run: |
-          pytest --cov=libpythonpro_fls
       - name: Codecov
         env:
           CODECOV_TOKEN: '0418bf9b-2a55-4c89-a472-9c51c1183e6d'
