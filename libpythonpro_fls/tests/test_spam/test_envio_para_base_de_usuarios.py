@@ -2,7 +2,6 @@ from unittest.mock import Mock
 
 import pytest
 
-from libpythonpro_fls.spam.enviador_de_email import Enviador
 from libpythonpro_fls.spam.main import EnviadorDeSpam
 from libpythonpro_fls.spam.models import Usuario
 
@@ -30,6 +29,7 @@ def test_qde_de_spam(sessao, usuarios):
         'Confira os modulos fantasticos'
     )
     assert len(usuarios) == enviador.enviar.call_count
+
 
 def test_parametros_de_spam(sessao):
     usuario = Usuario(nome='Fabio', email='fabiocarini2003@gmail.com')
