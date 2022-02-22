@@ -5,14 +5,13 @@ name = "pypi"
 
 [packages]
 requests = "*"
-pytest = "*"
 
 [dev-packages]
 flake8 = "*"
-pytest = "*"
 coverage = "*"
 pytest-cov = "*"
 pytest-mock = "*"
+pytest = "*"
 
 [requires]
 python_version = "3.9"
