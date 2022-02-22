@@ -1,5 +1,5 @@
 schedule: ''
 update: insecure
 requirements:
-  - requirements.txt
-  - requirements-dev.txt
+  - Pipfile
+  - Pipfile.lock
