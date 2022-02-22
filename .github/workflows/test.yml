@@ -22,7 +22,8 @@ jobs:
           architecture: x64
       - name: Instalar dependências
         run: |
-          pip install -r requirements-dev.txt
+          pip install pipenv 
+          pipenv sync --dev
       - name: testes
         run: |
           pytest --cov=libpythonpro_fls
