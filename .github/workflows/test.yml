@@ -22,7 +22,7 @@ jobs:
           architecture: x64
       - name: Instalar dependências
         run: |
-          pip install -q pipenv 
+          pip install -q pipenv codecov
           pipenv sync --dev
       - name: testes
         run: |
